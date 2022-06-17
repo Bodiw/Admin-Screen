@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "adminscreen",
+  "version": "0.1",
+
+  "name": "Admin Screen",
+  "description": "Adds a screen with quick access to commands",
+  "authors": ["Bodiw"],
+  "contact": {
+    "homepage": "https://github.com/Bodiw",
+    "sources": "https://github.com/Bodiw/Admin-Screen"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/adminscreen/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": ["me.bodiw.adminscreen.Mod"],
+    "client": ["me.bodiw.adminscreen.client.ModClient"]
+  },
+  "mixins": ["modid.mixins.json"],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
